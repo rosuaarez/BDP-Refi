@@ -685,9 +685,10 @@
   <div class="divider" style="margin-top: 28px; margin-bottom: 36px;"></div>
 
   <div class="grid-2" style="gap: 24px; align-items: start;">
-    <!-- Gráfica principal -->
+    <!-- Columna izquierda: Gráfica principal + Verbalizaciones -->
+    <div style="display: flex; flex-direction: column; gap: 16px;">
     <div class="card reveal rev-1">
-      <div class="tag tag-amber">Comprensión del pago</div>
+      <div class="tag tag-amber">Qué entienden los usuarios sobre su pago semanal</div>
       <div class="result-row">
         <div class="result-item">
           <div class="result-pct" style="color: var(--green-deep);">73%</div>
@@ -721,6 +722,37 @@
       </div>
     </div>
 
+    <!-- Verbalizaciones -->
+    <div class="card reveal rev-1">
+      <h3 class="h3" style="margin-bottom: 14px;">💬 Verbalizaciones de usuarios</h3>
+      <div style="display: flex; flex-direction: column; gap: 16px;">
+        <div style="font-size: 11.5px; font-weight: 700; color: var(--green-deep); text-transform: uppercase; letter-spacing: 0.04em; margin-bottom: -4px;">Usuarios que comprendieron correctamente</div>
+        <div class="quote-block">
+          <p class="quote-text">Porque ahí viene especificado el nuevo pago semanal.</p>
+        </div>
+        <div class="quote-block">
+          <p class="quote-text">Es lo que explica el resumen de la compra.</p>
+        </div>
+        <div class="quote-block">
+          <p class="quote-text">Es lo que dice la app.</p>
+        </div>
+        <div class="quote-block">
+          <p class="quote-text">Lo detalla la app.</p>
+        </div>
+        <div style="font-size: 11.5px; font-weight: 700; color: var(--amber); text-transform: uppercase; letter-spacing: 0.04em; margin-top: 4px; margin-bottom: -4px;">Usuarios que aún buscaron mayor contexto</div>
+        <div class="quote-block" style="border-color: var(--amber);">
+          <p class="quote-text">De qué compras es mi pago semanal y de cuánto es cada una.</p>
+        </div>
+        <div class="quote-block" style="border-color: var(--amber);">
+          <p class="quote-text">Que aparezcan las compras anteriores.</p>
+        </div>
+        <div class="quote-block" style="border-color: var(--amber);">
+          <p class="quote-text">El nombre de los productos que estoy terminando de pagar junto con su monto total y lo que falta por pagar.</p>
+        </div>
+      </div>
+    </div>
+    </div>
+
     <!-- Heatmap -->
     <div class="reveal rev-2" style="display: flex; justify-content: center;">
       <div class="card" style="padding: 14px; border-color: rgba(138,90,18,0.25); max-width: 320px; width: 100%;">
@@ -732,8 +764,9 @@
   </div>
 
   <!-- Segunda pregunta -->
-  <div class="card reveal rev-2" style="margin-top: 24px;">
-    <div class="tag tag-amber">📈 Comprensión del nuevo pago semanal</div>
+  <h3 class="h3 reveal rev-2" style="margin-top: 28px; margin-bottom: 12px;">Expectativa sobre el siguiente pago semanal</h3>
+  <div class="card reveal rev-2">
+    <div class="tag tag-amber">📈 Expectativa sobre el siguiente pago semanal</div>
     <div class="result-row">
       <div class="result-item">
         <div class="result-pct" style="color: var(--green-deep);">87%</div>
@@ -769,8 +802,9 @@
   </div>
 
   <!-- Tercera pregunta -->
-  <div class="card reveal rev-3" style="margin-top: 16px;">
-    <div class="tag tag-amber">📊 Necesidad de información adicional</div>
+  <h3 class="h3 reveal rev-3" style="margin-top: 28px; margin-bottom: 12px;">Información necesaria para continuar con confianza</h3>
+  <div class="card reveal rev-3">
+    <div class="tag tag-amber">📊 Información necesaria para continuar con confianza</div>
     <div class="result-row">
       <div class="result-item">
         <div class="result-pct" style="color: var(--green-deep);">87%</div>
@@ -800,7 +834,6 @@
   <!-- Interpretación — Necesidad de información adicional -->
   <div class="card reveal rev-3" style="margin-top: 12px; background: var(--bg-light);">
     <div style="font-size: 11.5px; font-weight: 700; color: var(--amber); text-transform: uppercase; letter-spacing: 0.04em; margin-bottom: 8px;">¿Qué información solicitaron?</div>
-    <p style="font-size: 13.5px; color: var(--text-body); line-height: 1.65;">Los pocos participantes que solicitaron información adicional coincidieron en que les gustaría visualizar mayor detalle sobre las compras anteriores, como los productos incluidos, el monto de cada compra o el saldo pendiente.</p>
     <div style="font-size: 11.5px; font-weight: 700; color: var(--text-dark); text-transform: uppercase; letter-spacing: 0.04em; margin-top: 16px; margin-bottom: 10px;">💬 Verbalizaciones</div>
     <div style="display: flex; flex-direction: column; gap: 12px;">
       <div class="quote-block" style="border-color: var(--amber);">
@@ -813,8 +846,9 @@
   </div>
 
   <!-- Cuarta pregunta -->
-  <div class="card reveal rev-3" style="margin-top: 16px;">
-    <div class="tag tag-amber">📊 Claridad sobre las compras</div>
+  <h3 class="h3 reveal rev-3" style="margin-top: 28px; margin-bottom: 12px;">Comprensión de las compras incluidas en el pago</h3>
+  <div class="card reveal rev-3">
+    <div class="tag tag-amber">📊 Comprensión de las compras incluidas en el pago</div>
     <div class="result-row">
       <div class="result-item">
         <div class="result-pct" style="color: var(--green-deep);">87%</div>
@@ -851,7 +885,6 @@
   <!-- Interpretación — Claridad sobre las compras -->
   <div class="card reveal rev-3" style="margin-top: 12px; background: var(--bg-light);">
     <div style="font-size: 11.5px; font-weight: 700; color: var(--amber); text-transform: uppercase; letter-spacing: 0.04em; margin-bottom: 8px;">¿Qué les hizo responder "Más o menos"?</div>
-    <p style="font-size: 13.5px; color: var(--text-body); line-height: 1.65;">Los participantes que respondieron "Más o menos" señalaron que les ayudaría visualizar con mayor detalle las compras anteriores o mejorar la organización de la información para identificarla con mayor facilidad.</p>
     <div style="font-size: 11.5px; font-weight: 700; color: var(--text-dark); text-transform: uppercase; letter-spacing: 0.04em; margin-top: 16px; margin-bottom: 10px;">💬 Verbalizaciones</div>
     <div style="display: flex; flex-direction: column; gap: 12px;">
       <div class="quote-block" style="border-color: var(--amber);">
@@ -883,35 +916,6 @@
     <p style="font-size: 14px; color: var(--text-body); line-height: 1.7; margin-top: 12px;">Como oportunidad de mejora incremental, evaluar incorporar mayor detalle sobre las compras anteriores (por ejemplo, productos incluidos o saldo restante), ya que es la principal información solicitada por el reducido grupo de participantes que aún manifestó necesitar mayor contexto antes de continuar.</p>
   </div>
 
-  <!-- Verbalizaciones -->
-  <div class="card reveal rev-4" style="margin-top: 16px;">
-    <h3 class="h3" style="margin-bottom: 14px;">💬 Verbalizaciones de usuarios</h3>
-    <div style="display: flex; flex-direction: column; gap: 16px;">
-      <div style="font-size: 11.5px; font-weight: 700; color: var(--green-deep); text-transform: uppercase; letter-spacing: 0.04em; margin-bottom: -4px;">Usuarios que comprendieron correctamente</div>
-      <div class="quote-block">
-        <p class="quote-text">Porque ahí viene especificado el nuevo pago semanal.</p>
-      </div>
-      <div class="quote-block">
-        <p class="quote-text">Es lo que explica el resumen de la compra.</p>
-      </div>
-      <div class="quote-block">
-        <p class="quote-text">Es lo que dice la app.</p>
-      </div>
-      <div class="quote-block">
-        <p class="quote-text">Lo detalla la app.</p>
-      </div>
-      <div style="font-size: 11.5px; font-weight: 700; color: var(--amber); text-transform: uppercase; letter-spacing: 0.04em; margin-top: 4px; margin-bottom: -4px;">Usuarios que aún buscaron mayor contexto</div>
-      <div class="quote-block" style="border-color: var(--amber);">
-        <p class="quote-text">De qué compras es mi pago semanal y de cuánto es cada una.</p>
-      </div>
-      <div class="quote-block" style="border-color: var(--amber);">
-        <p class="quote-text">Que aparezcan las compras anteriores.</p>
-      </div>
-      <div class="quote-block" style="border-color: var(--amber);">
-        <p class="quote-text">El nombre de los productos que estoy terminando de pagar junto con su monto total y lo que falta por pagar.</p>
-      </div>
-    </div>
-  </div>
 </div>
 
 
@@ -1070,82 +1074,49 @@
     </div>
   </div>
 
-  <!-- Patrón 1 -->
+  <!-- Hallazgos transversales -->
+  <span class="eyebrow reveal" style="margin-bottom: 16px; display: inline-flex;">🔎 Hallazgos transversales</span>
+
   <div class="card reveal rev-1" style="margin-bottom: 16px; border-color: rgba(46,158,91,0.25);">
-    <div style="display: flex; align-items: flex-start; justify-content: space-between; gap: 20px; flex-wrap: wrap; margin-bottom: 18px;">
+    <div style="display: flex; align-items: flex-start; justify-content: space-between; gap: 20px; flex-wrap: wrap;">
       <div style="flex: 1; min-width: 220px;">
-        <div class="tag tag-green">💡 Patrón 1</div>
-        <h3 class="h3">Los usuarios construyen su comprensión del pago a partir de la información que explica cómo se compone el pago semanal — más que del monto total por sí solo.</h3>
+        <div class="tag tag-green">💡 Hallazgo 1</div>
+        <h3 class="h3">Los usuarios comprenden el pago a partir de cómo se explica su composición, no del monto total por sí solo.</h3>
       </div>
-      <span class="badge badge-yes" style="flex-shrink: 0;">🟢 Patrón transversal</span>
-    </div>
-    <div style="background: var(--bg-light); border: 1px solid var(--border-light); border-radius: 12px; padding: 18px 22px; margin-bottom: 14px;">
-      <div style="font-size: 10.5px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: var(--text-body); margin-bottom: 14px;">Evidencia — qué ayudó a entender el pago semanal</div>
-      <div class="bar-row" style="margin-top: 0;">
-        <div class="bar-item">
-          <div class="bar-meta"><span>Desglose detallado de compras</span><span style="color: var(--green-deep);">36%</span></div>
-          <div class="bar-track"><div class="bar-fill fill-green" style="--w: 36%;"></div></div>
-        </div>
-        <div class="bar-item">
-          <div class="bar-meta"><span>Listado o resumen de compras</span><span style="color: var(--green-mid);">20%</span></div>
-          <div class="bar-track"><div class="bar-fill fill-green-mid" style="--w: 20%;"></div></div>
-        </div>
-        <div class="bar-item">
-          <div class="bar-meta"><span>Indicadores del pago semanal</span><span style="color: #8A5A12;">20%</span></div>
-          <div class="bar-track"><div class="bar-fill fill-amber" style="--w: 20%;"></div></div>
-        </div>
-        <div class="bar-item">
-          <div class="bar-meta"><span>Total a pagar</span><span style="color: var(--text-body);">16%</span></div>
-          <div class="bar-track"><div class="bar-fill fill-gray" style="--w: 16%;"></div></div>
-        </div>
-      </div>
-    </div>
-    <div class="conclusion-block" style="margin-top: 0;">
-      <div class="conclusion-label">Qué debe hacer Producto</div>
-      <div class="conclusion-text">En la última pregunta del estudio, que indagó qué elemento les ayudó más a entender el pago, el 76% de los participantes señaló elementos que explican la composición del pago semanal (desglose, listado, indicadores), frente a un 16% que se apoyó únicamente en el total. Esto confirma que la comprensión se construye a partir de cómo se explica el pago, y no del monto final de forma aislada. Prioridad: mantener visibles estos componentes de composición en los tres escenarios, en lugar de tratarlos como información secundaria frente al monto final.</div>
+      <span class="badge badge-yes" style="flex-shrink: 0;">🟢 Hallazgo transversal</span>
     </div>
   </div>
 
-  <!-- Patrón 2 -->
   <div class="card reveal rev-2" style="margin-bottom: 16px; border-color: rgba(46,158,91,0.25);">
-    <div style="display: flex; align-items: flex-start; justify-content: space-between; gap: 20px; flex-wrap: wrap; margin-bottom: 18px;">
+    <div style="display: flex; align-items: flex-start; justify-content: space-between; gap: 20px; flex-wrap: wrap;">
       <div style="flex: 1; min-width: 220px;">
-        <div class="tag tag-green">💡 Patrón 2</div>
-        <h3 class="h3">El desglose detallado de compras fue el elemento más valorado por los usuarios para comprender qué estaban pagando.</h3>
+        <div class="tag tag-green">💡 Hallazgo 2</div>
+        <h3 class="h3">El desglose detallado de compras es el elemento más valorado para entender qué se está pagando.</h3>
       </div>
       <span class="badge badge-yes" style="flex-shrink: 0;">🟢 Elemento de mayor apoyo</span>
     </div>
-    <div class="conclusion-block" style="margin-top: 0;">
-      <div class="conclusion-label">Qué debe hacer Producto</div>
-      <div class="conclusion-text">El desglose detallado de compras no solo fue la respuesta más frecuente en la última pregunta del estudio, sino que el comportamiento observado en el heatmap confirma este hallazgo: los usuarios interactúan activamente con los desgloses para consultar mayor información antes de continuar, en los tres escenarios evaluados. Esto confirma que el desglose funciona correctamente como apoyo para explicar el pago semanal. Prioridad: tratar el desglose como el componente central de la pantalla de pago, no como un elemento de apoyo opcional.</div>
-    </div>
   </div>
 
-  <!-- Patrón 3 -->
   <div class="card reveal rev-3" style="margin-bottom: 40px; border-color: rgba(138,90,18,0.2);">
-    <div style="display: flex; align-items: flex-start; justify-content: space-between; gap: 20px; flex-wrap: wrap; margin-bottom: 18px;">
+    <div style="display: flex; align-items: flex-start; justify-content: space-between; gap: 20px; flex-wrap: wrap;">
       <div style="flex: 1; min-width: 220px;">
-        <div class="tag tag-amber">💡 Patrón 3</div>
-        <h3 class="h3">Cuando la pantalla comunica claramente cómo cambia el pago semanal, los usuarios comprenden mejor la operación.</h3>
+        <div class="tag tag-amber">💡 Hallazgo 3</div>
+        <h3 class="h3">Comunicar claramente cómo cambia el pago semanal mejora significativamente su comprensión.</h3>
       </div>
       <span class="badge badge-partial" style="flex-shrink: 0;">🟡 Aprendizaje de la prueba express</span>
     </div>
-    <div class="conclusion-block" style="margin-top: 0;">
-      <div class="conclusion-label">Qué debe hacer Producto</div>
-      <div class="conclusion-text">La prueba express del escenario de Liquidación mostró una mejora importante en la comprensión del flujo. El 73% de los participantes identificó correctamente qué integra el pago semanal y el 87% entendió que el monto mostrado corresponde al nuevo pago semanal que realizará después de aceptar la opción. Esto confirma que comunicar claramente cómo se compone el pago y cuál será el nuevo monto semanal tiene un impacto directo en la comprensión del flujo. Como oportunidad de mejora incremental, evaluar mostrar mayor detalle sobre las compras anteriores (por ejemplo, productos incluidos, saldo restante o avance de pago), ya que fue la principal información solicitada por el reducido grupo de participantes que aún buscó mayor contexto antes de continuar.</div>
-    </div>
   </div>
 
-  <!-- Próximos pasos -->
+  <!-- Recomendaciones para Producto -->
   <div class="divider"></div>
 
   <div class="card reveal rev-1" style="border-color: rgba(46,158,91,0.2);">
-    <span class="eyebrow" style="margin-bottom: 16px; display: inline-flex;">🎯 Qué debe priorizar Producto</span>
+    <span class="eyebrow" style="margin-bottom: 16px; display: inline-flex;">🎯 Recomendaciones para Producto</span>
     <div style="display: flex; flex-direction: column; gap: 12px; margin-top: 4px;">
-      <p style="font-size: 14px; color: var(--text-body); line-height: 1.7; margin-top: 0;"><strong style="color: var(--green-deep);">Mantener el desglose detallado de compras como elemento principal del resumen de compra:</strong> fue el recurso más valorado por los usuarios para comprender el pago semanal.</p>
-      <p style="font-size: 14px; color: var(--text-body); line-height: 1.7;"><strong style="color: var(--green-deep);">Conservar visibles los elementos que explican cómo se compone el pago (desglose, listado e indicadores):</strong> concentraron la mayoría de las menciones en la pregunta de cierre.</p>
-      <p style="font-size: 14px; color: var(--text-body); line-height: 1.7;"><strong style="color: var(--amber);">Continuar fortaleciendo la comunicación de conceptos específicos principalmente en Recompra</strong> y, como mejora incremental en Liquidación, evaluar mostrar mayor detalle sobre las compras anteriores (productos incluidos, saldo restante o avance de pago).</p>
-      <p style="font-size: 14px; color: var(--text-body); line-height: 1.7;">El desglose ya cumple su función de ayudar a comprender el pago. La oportunidad de mejora está en hacer más clara cierta información específica dentro de ese mismo componente, no necesariamente en agregar nuevas secciones o más contenido.</p>
+      <p style="font-size: 14px; color: var(--text-body); line-height: 1.7; margin-top: 0;"><strong style="color: var(--green-deep);">Mantener el desglose de compras como elemento principal del resumen de pago.</strong></p>
+      <p style="font-size: 14px; color: var(--text-body); line-height: 1.7;"><strong style="color: var(--green-deep);">Priorizar los componentes que explican la composición del pago sobre el monto total.</strong></p>
+      <p style="font-size: 14px; color: var(--text-body); line-height: 1.7;"><strong style="color: var(--amber);">Reforzar la claridad conceptual en Recompra.</strong></p>
+      <p style="font-size: 14px; color: var(--text-body); line-height: 1.7;"><strong style="color: var(--amber);">Sumar mayor detalle de compras anteriores en Liquidación.</strong></p>
     </div>
   </div>
 </div>
@@ -1153,8 +1124,8 @@
 <!-- ══════════════ CIERRE OSCURO ══════════════ -->
 <div class="section section-dark" style="padding-top: 80px; padding-bottom: 80px;">
   <div class="closing-box reveal">
-    <p>Los usuarios encuentran en el desglose detallado de compras el principal apoyo para comprender el pago semanal, lo que confirma que el resumen de compra comunica adecuadamente la composición del pago en los escenarios evaluados.<br>
-    <strong>La prueba express de Liquidación demuestra que comunicar claramente cómo cambia el pago semanal incrementa significativamente la comprensión del flujo. La principal oportunidad de mejora se concentra ahora en reforzar algunos conceptos específicos dentro del desglose, especialmente en Recompra y, como mejora incremental en Liquidación, ofrecer mayor detalle sobre las compras anteriores para los pocos usuarios que aún buscan validar esa información antes de continuar.</strong></p>
+    <p>Este estudio deja una prioridad clara para Producto.<br>
+    <strong>La claridad con la que se comunica el pago semanal es la palanca más efectiva para fortalecer la confianza del usuario.</strong></p>
   </div>
 
   <div class="chip-row reveal rev-1" style="justify-content: center; margin-top: 48px;">
